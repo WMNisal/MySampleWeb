@@ -1,0 +1,165 @@
+<html>
+<haed>
+    <style>
+        .header {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.192);
+            width: 100%;
+            height: 70px;
+            background-image: url("https://seeklogo.com/images/F/fitness-logo-2BD9490019-seeklogo.com.png");
+            background-repeat: no-repeat;
+            background-size: 60px auto;
+            background-position: 15px;
+        }
+        
+        body {
+            background-size: 100%;
+            background-image: url("http://yesofcorsa.com/wp-content/uploads/2015/08/3106_mixed_martial_arts.jpg");
+            background-repeat: no-repeat;
+        }
+        
+        .logo {
+            float: left;
+            font-family: 'Franklin Gothic Medium';
+            color: rgb(255, 255, 255);
+            margin: 20px 90px;
+            font-size: 30;
+        }
+        
+        .logo:hover {
+            color: gold;
+        }
+        
+        ul {
+            font-family: Futura Bk BT;
+            float: left;
+            overflow: hidden;
+            padding: 0;
+            margin: 0px 0px;
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.651);
+            text-align: center;
+        }
+        
+        li {
+            display: inline-block;
+            padding: 25px 30px;
+            margin: 0px 0px;
+        }
+        
+        .getStand {
+            font-family: Futura Bk BT;
+            float: right;
+            background-color: crimson;
+            border-radius: 20px;
+            padding: 10px 20px;
+            color: white;
+            margin: 17px 50px;
+        }
+        
+        .getStand:hover {
+            background-color: rgb(255, 0, 43);
+            padding: 14px 30px;
+            margin: 12px 30px;
+            border-radius: 25px;
+            font-size: 18;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        li:hover {
+            color: white;
+            font-size: 18;
+            padding: 20px 25px;
+        }
+        
+        .dropDown-contant {
+            margin: 24px 0px;
+            padding: 0;
+            position: absolute;
+            display: none;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        .dropDown:hover .dropDown-contant {
+            display: block;
+        }
+        
+        .dropDown-contant a {
+            background-color: rgba(0, 0, 0, 0.541);
+            display: inline-block;
+            font-size: 15;
+            padding: 25px 60px;
+        }
+        
+        .dropDown-contant a:hover {
+            background-color: rgba(0, 0, 0, 0.87);
+            color: gold;
+        }
+        
+        .active {
+            color: gold;
+        }
+        
+        .active:hover {
+            color: gold;
+        }
+        
+        .body {
+            font-family: Futura Bk BT;
+            width: 70%;
+            height: 200px;
+            font-size: 18;
+            position: absolute;
+            margin: 300px 363px;
+            padding: 20px 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        
+        input[type=text] {
+            background-color: rgba(255, 255, 255, 0.473);
+            box-sizing: border-box;
+            border: none;
+            border-radius: 15px;
+            float: left;
+            padding: 5px 20px;
+            width: 100px;
+            margin: 90px 20px;
+            -webkit-transition: width 0.4s ease-in-out;
+        }
+        
+        input[type=text]:focus {
+            width: 20%;
+        }
+    </style>
+</haed>
+
+<body>
+    <div class="header">
+        <p class="logo">FITNESS</p>
+        <ul>
+            <li class="active"><a>HOME</a></li>
+            <li><a>ABOUT</a></li>
+            <li><a>COURSE</a></li>
+            <li><a>BLOG</a></li>
+            <li class="dropDown"><a class="dropButton">PAGES</a>
+                <div class="dropDown-contant">
+                    <a>PAGE-01</a><br>
+                    <a>PAGE-02</a><br>
+                    <a>PAGE-03</a><br>
+                </div>
+            </li>
+            <li><a>CONTACT</a></li>
+        </ul>
+        <div>
+            <a class="getStand">GET STAND</a>
+        </div>
+    </div>
+    <input type="text" name="search" placeholder="Search..">
+    <div class="body">
+        <img src="JoinNow.png">
+        <p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp GET IN SHAPE TODAY</p>
+    </div>
+</body>
+
+</html>
